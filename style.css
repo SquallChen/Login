@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: #f0f0f0;
+}
+.form{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+.form .formmain{
+    background: url(img/login.jpg);
+    max-width:400px ;
+    min-height: 710px;
+    background-size: 400px 710px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form .formmain .inp{
+    margin-left:25px;
+    min-width: 380px;
+    margin-top:430px;
+    max-height: 50px;
+}
+.form .formmain .inp img{
+    max-width:26px;
+    max-heitht:26px;
+    /*margin-top:430px;*/
+}
+.form .formmain .inp input{
+   /* position: absolute;*/
+    min-height: 22px;
+    /*top:0px;*/
+    margin-left:15px;
+    border:none;
+    height:26px;
+    vertical-align: bottom;
+    outline:medium;
+
+}
+.form .formmain .inp input::-webkit-input-placeholder{
+    color:#7bd6fe;
+    font-size: 16px;
+}
+.form .formmain .inp .line{
+    min-height:1px;
+    max-width:350px;
+    background: #7bd6fe;
+    margin-top:10px;
+}
+
+
+.form .formmain .inp2{
+    margin-left:25px;
+    margin-top:-50px;
+    min-width: 380px;
+    max-height:50px;
+}
+.form .formmain .inp2 img{
+    max-width:26px;
+    max-heitht:26px;
+}
+.form .formmain .inp2 input{
+    /* position: absolute;*/
+    min-height: 22px;
+    /*top:0px;*/
+    margin-left:15px;
+    border:none;
+    height:26px;
+    vertical-align: bottom;
+    outline:medium;
+
+}
+.form .formmain .inp2 input::-webkit-input-placeholder{
+    color:#7bd6fe;
+    font-size: 16px;
+}
+.form .formmain .inp2 .line{
+    min-height:1px;
+    max-width:350px;
+    background: #7bd6fe;
+    margin-top:10px;
+}
+
+
+.form .formmain .btn{
+    margin-top:-30px;
+    min-width: 350px;
+    max-height: 65px;
+    border-radius: 50px;
+    /*background: #7bd6fe;*/
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+    background: linear-gradient(to right, #27cdff, #238aff);
+    cursor: pointer;
+    box-shadow:1px 8px 25px 2px #bfe3ff;
+}
+.form p{
+    color:#999;
+    margin-left:-306px;
+    margin-top:650px;
+    font-size: 14px;
+    font-family: Arial;
+}
+.form p span{
+    color:#258cff;
+    font-weight: bold;
+}
+
+
+
