@@ -113,6 +113,7 @@ body{
 .form p span{
     color:#258cff;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
