@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>sign in</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<div class="contain">
+     <div id="welcome"></div>
+     <button id="logOut" hidden>Logout</button>
+    <form name="signIn" >
+        <div class="signUser">
+            <img src="img/2.jpg"/>
+            <input type="text" name="username" placeholder="Username">
+            <div class="line"></div>
+        </div>
+        <div class="signUser2">
+            <img src="img/1.jpg"/>
+            <input type="password" name="password" placeholder="Password">
+            <div class="line"></div>
+        </div>
+        <input type="submit" name="submit" value="Sign in" class="sign-in-btn">
+        <p class="p1">Dont't have an account? <span class="sign-up">Sign Up</span></p>
+    </form>
+
+    <form name="signUp" hidden >
+        <div class="signupinput1">
+            <span>Username:</span>
+            <input type="text" name="username">
+            <div class="line"></div>
+        </div>
+        <div class="signupinput2">
+            <span>Email:</span>
+            <input type="email" name="email">
+            <div class="line"></div>
+        </div>
+        <div class="signupinput2">
+            <span class="span2">Password:</span>
+            <input type="password" name="password">
+            <div class="line"></div>
+        </div>
+        <input type="submit" value="Sign up" class="submit">
+        <p class="p2">Already have have an account? Back to <span class="sign-in">Sign In</span></p>
+    </form>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./node_modules/leancloud-storage/dist/av.js"></script>
+<script src="main.js"></script>
+<script>
+   /* var APP_ID = 'd1l7dVxFlCO3k9LxT9RhPriS-gzGzoHsz';
+    var APP_KEY = 'JNExPRwDMdWrrowE7XIyfNgs';
+        AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+        });
+ 
+    let signInForm = document.querySelector('form[name=signIn]')
+    signInForm.onsubmit = (e)=>{
+        e.preventDefault();
+        let username = signInForm.username.value
+        let password = signInForm.password.value
+        AV.User.logIn(username, password).then(function (loginedUser) {
+            console.log(loginedUser);
+        }, function (error) {
+            window.location.reload();
+        });
+    }*/
+
+</script>
+
+</body>
+</html>

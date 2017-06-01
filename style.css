@@ -4,97 +4,54 @@
 }
 body{
     background: #f0f0f0;
-}
-.form{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    height: 100vh;
-    flex-wrap: wrap;
-
-}
-.form .formmain{
-    background: url(img/login.jpg);
-    max-width:400px ;
-    min-height: 710px;
-    background-size: 400px 710px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    height:100vh;
 }
-.form .formmain .inp{
-    margin-left:25px;
-    min-width: 380px;
-    margin-top:430px;
-    max-height: 50px;
+.contain{
+    background: url(./img/login.jpg);
+    min-width:400px ;
+    min-height: 710px;
+    border-radius: 30px;
+    background-size: 400px 710px;
+    position: relative;
 }
-.form .formmain .inp img{
-    max-width:26px;
+.contain img{
+    max-width: 26px;
     max-heitht:26px;
-    /*margin-top:430px;*/
 }
-.form .formmain .inp input{
-   /* position: absolute;*/
+.contain input{
     min-height: 22px;
-    /*top:0px;*/
     margin-left:15px;
     border:none;
     height:26px;
-    vertical-align: bottom;
+    vertical-align: top;
     outline:medium;
-
 }
-.form .formmain .inp input::-webkit-input-placeholder{
+.contain input::-webkit-input-placeholder{
     color:#7bd6fe;
     font-size: 16px;
 }
-.form .formmain .inp .line{
+.contain .line{
     min-height:1px;
     max-width:350px;
     background: #7bd6fe;
-    margin-top:10px;
+    margin-top:8px;
 }
-
-
-.form .formmain .inp2{
-    margin-left:25px;
-    margin-top:-50px;
-    min-width: 380px;
-    max-height:50px;
+.contain .signUser{
+    margin-top:110%;
+    margin-left:6%;
 }
-.form .formmain .inp2 img{
-    max-width:26px;
-    max-heitht:26px;
+.contain .signUser2{
+    margin-top:8%;
+    margin-left:6%;
 }
-.form .formmain .inp2 input{
-    /* position: absolute;*/
-    min-height: 22px;
-    /*top:0px;*/
-    margin-left:15px;
-    border:none;
-    height:26px;
-    vertical-align: bottom;
-    outline:medium;
-
-}
-.form .formmain .inp2 input::-webkit-input-placeholder{
-    color:#7bd6fe;
-    font-size: 16px;
-}
-.form .formmain .inp2 .line{
-    min-height:1px;
-    max-width:350px;
-    background: #7bd6fe;
-    margin-top:10px;
-}
-
-
-.form .formmain .btn{
-    margin-top:-30px;
+.contain .sign-in-btn{
     min-width: 350px;
-    max-height: 65px;
+    min-height: 65px;
     border-radius: 50px;
-    /*background: #7bd6fe;*/
     color:white;
     font-size: 20px;
     text-align: center;
@@ -102,19 +59,133 @@ body{
     background: linear-gradient(to right, #27cdff, #238aff);
     cursor: pointer;
     box-shadow:1px 8px 25px 2px #bfe3ff;
+    margin-top:7%;
+    margin-left:6%;
 }
-.form p{
+/*.contain :nth-child(1) p{
+    margin-top:8%;
+    text-align: center;
     color:#999;
-    margin-left:-306px;
-    margin-top:650px;
-    font-size: 14px;
-    font-family: Arial;
-}
-.form p span{
+    font-size: 24px;
+}*/
+.contain p span{
     color:#258cff;
     font-weight: bold;
     cursor: pointer;
 }
 
+/*.contain :nth-child(2) p{
+    margin-top:5%;
+    text-align: center;
+    color:#999;
+    font-size: 14px;
+}*/
 
+.contain .p1{
+    font-size: 16px;
+    text-align: center;
+    margin-top:26px;
+}
+.contain .p2{
+    font-size: 16px;
+    text-align: center;
+    margin-top:20px;
+}
 
+.signupinput1{
+    margin-top:440px;
+    margin-left:20px;
+}
+.signupinput1 input{
+    min-height: 22px;
+    margin-left:15px;
+    border:none;
+    height:26px;
+    vertical-align: bottom;
+    outline:medium;
+}
+ .signupinput1 span{
+    color:#24a8fd;
+    font-size: 16px;
+}
+.signupinput1 .line{
+    min-height:1px;
+    max-width:270px;
+    background: #24a8fd;
+    margin-top:2px;
+    margin-left:86px;
+}
+ .signupinput2{
+    margin-top:20px;
+    margin-left:20px;
+}
+ .signupinput2 input{
+    min-height: 22px;
+    margin-left:15px;
+    border:none;
+    height:26px;
+    vertical-align: bottom;
+    outline:medium;
+}
+.signupinput2 span{
+    color:#24a8fd;
+    font-size: 16px;
+    margin-left:26px;
+}
+ .signupinput2 .span2{
+    margin-left:4px;
+}
+ .signupinput2 .line{
+    min-height:1px;
+    max-width:270px;
+    background: #24a8fd;
+    margin-top:2px;
+    margin-left:86px;
+}
+.contain .submit{
+    margin-left:46px;
+    margin-top:40px;
+    min-width: 300px;
+    min-height: 50px;
+    border-radius: 50px;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 46px;
+    background: linear-gradient(to right, #27cdff, #238aff);
+    cursor: pointer;
+    box-shadow:1px 8px 25px 2px #bfe3ff;
+}
+
+.show{
+    visibility: visible;
+}
+.hidden{
+    visibility: hidden;
+}
+
+#welcome{
+    color:white;
+    font-size: 14px;
+    margin-left:220px;
+    margin-top:30px;
+    margin-right:10px;
+    position: absolute;
+    
+}
+#logOut{
+    top:30px;
+    position: absolute;
+    min-width: 66px;
+    max-height: 24px;
+    border-radius: 50px;
+    border: none;
+    color:white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 16px;
+    background: linear-gradient(to right, #27cdff, #24cdff);
+    cursor: pointer;
+    box-shadow:1px 1px 1px 0px #238aff; 
+    margin-left:320px;
+}
